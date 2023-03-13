@@ -4,8 +4,10 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.FontWeight?>
+<?import javafx.scene.text.Font?>
 
 <?import javafx.scene.control.Button?>
+<?import java.net.URL?>
 <VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
       fx:controller="com.example.easycoin.HelloController"
       style="-fx-background-color: #1B3145;">
@@ -14,9 +16,12 @@
     </padding>
 
     <Label text="Welcome to EasyCoin!"
-           textFill="white"
-           alignment="CENTER"/>
-
+           alignment="CENTER">
+    </Label>
     <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+    <Button text="Log In" onAction="#onHelloButtonClick"/>
+    <stylesheets>
+        <URL value="@hello-view.css" />
+    </stylesheets>
+
 </VBox>
