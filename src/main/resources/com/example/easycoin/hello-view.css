@@ -5,7 +5,7 @@
     -fx-font-weight: bold;
 }
 
-.button {
+#welcomeText {
     -fx-background-color: #007FFF;
     -fx-text-fill: white;
     -fx-font-family: "Century Gothic";
@@ -13,6 +13,21 @@
     -fx-font-weight: bold;
 }
 
-.button:hover {
+#welcomeText {
     -fx-background-color: #0066CC;
+}
+
+#submitButton {
+    -fx-background-color: #2ecc71;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+}
+
+#submitButton {
+    -fx-background-color: #27ae60;
+}
+
+#submitButton {
+    -fx-background-color: #219653;
 }

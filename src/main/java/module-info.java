@@ -12,4 +12,5 @@ module com.example.easycoin {
 
     opens com.example.easycoin to javafx.fxml;
     exports com.example.easycoin;
+
 }
