@@ -21,7 +21,6 @@ public class HelloApplication extends Application {
         stage.setScene(scene);
         stage.show();
 
-
         //Create login scene
         Parent newRoot = FXMLLoader.load(getClass().getResource("login-view.fxml"));
         Scene newScene = new Scene(newRoot, 800, 500);
