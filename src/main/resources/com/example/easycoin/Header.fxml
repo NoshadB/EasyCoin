@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import java.net.URL?>
+
+<HBox styleClass="header-container" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.easycoin.HeaderController">
+
+    <Label text="CompanyName" styleClass="company-name"/>
+    <Region styleClass="flexible-region"/>
+
+    <Label fx:id="accountButton"/>
+    <Button text="My Account" styleClass="header-button" onAction="#onAccountButtonClick"/>
+
+    <Label fx:id="settingsButton"/>
+    <Button text="My Settings" styleClass="header-button" onAction="#onSettingsButtonClick"/>
+
+    <Label fx:id="logoutButton"/>
+    <Button text="Logout" styleClass="header-button" onAction="#onLogoutButtonClick"/>
+
+    <stylesheets>
+        <URL value="@../../../style/HeaderStyle.css" />
+    </stylesheets>
+</HBox>

@@ -1,0 +1,47 @@
+/* Header container */
+.header-container {
+    -fx-background-color: #333;
+    -fx-alignment: center;
+    -fx-padding: 10px;
+}
+
+/* Company name label */
+.company-name {
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+/* Flexible region */
+.flexible-region {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-min-width: 10;
+    -fx-pref-width: 100;
+    -fx-max-width: 2000;
+    -fx-hgrow: ALWAYS;
+}
+
+/* Header button */
+.header-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 0 10px;
+}
+
+/* Header button hover */
+.header-button:hover {
+    -fx-background-color: white;
+    -fx-border-color: #333;
+    -fx-text-fill: #333;
+}
+
+/* Header button pressed */
+.header-button:pressed {
+    -fx-background-color: #eee;
+    -fx-border-color: #333;
+    -fx-text-fill: #333;
+}

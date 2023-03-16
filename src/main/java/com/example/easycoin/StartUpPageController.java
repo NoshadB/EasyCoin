@@ -1,33 +1,24 @@
 package com.example.easycoin;
-
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
-
 import java.io.IOException;
 
-public class HelloController {
+public class StartUpPageController {
     @FXML
-    private Label welcomeText;
-
-    /*@FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Links to new page");
-    }*/
-
+    private Label loginButton;
     @FXML
-    protected void onHelloButtonClick() throws IOException {
 
-
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("login-view.fxml"));
+    /* Opens up login form when login button is clicked */
+    protected void onLoginButtonClick() throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("LoginPageView.fxml"));
         Parent root = loader.load();
         Scene scene = new Scene(root, 800, 500);
-        Stage stage = (Stage) welcomeText.getScene().getWindow();
+        Stage stage = (Stage) loginButton.getScene().getWindow();
         stage.setScene(scene);
         stage.setFullScreen(true);
     }
-
 }

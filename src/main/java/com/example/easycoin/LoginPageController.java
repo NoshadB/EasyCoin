@@ -2,16 +2,20 @@ package com.example.easycoin;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import javafx.stage.Window;
-import com.example.easycoin.AlertHelper;
+
+import java.io.IOException;
 
 
-public class LoginController {
+public class LoginPageController {
     @FXML
     private TextField nameField;
 
@@ -51,4 +55,13 @@ public class LoginController {
                 "Welcome " + nameField.getText());
     }
 
+    public void onSubmitButtonClick(ActionEvent actionEvent) throws IOException {
+
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("FrontPageView.fxml"));
+        Parent root = loader.load();
+        Scene scene = new Scene(root, 800, 500);
+        Stage stage = (Stage) submitButton.getScene().getWindow();
+        stage.setScene(scene);
+        stage.setFullScreen(true);
+    }
 }

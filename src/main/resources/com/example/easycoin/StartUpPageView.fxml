@@ -1,14 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.Button?>
 <?import java.net.URL?>
 
+<!--
+This is the first scene shown on the application.
+It is the start-up page that welcomes the user to the program.
+
+Tasks to do...
+1. Properly comment code
+-->
+
 <VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.easycoin.HelloController"
+      fx:controller="com.example.easycoin.StartUpPageController"
       style="-fx-background-color: #1B3145;">
+
+    <!-- <BorderPane>
+        <top>
+            <fx:include source="Header.fxml" />
+        </top>
+    </BorderPane>
+
+    -->
+
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
@@ -16,10 +32,12 @@
     <Label text="Welcome to EasyCoin!"
            alignment="CENTER">
     </Label>
-    <Label fx:id="welcomeText"/>
-    <Button text="Log In" onAction="#onHelloButtonClick"/>
+
+    <Label fx:id="loginButton"/>
+    <Button text="Log In" onAction="#onLoginButtonClick"/>
+
     <stylesheets>
-        <URL value="@hello-view.css" />
+        <URL value="@../../../style/StartUpPageStyle.css" />
     </stylesheets>
 
 </VBox>

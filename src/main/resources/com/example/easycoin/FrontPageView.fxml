@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.easycoin.FrontPageController"
+            style="-fx-background-color: #1B3145;">
+
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <top>
+        <fx:include source="Header.fxml"/>
+    </top>
+
+    <bottom>
+        <Label text="Welcome to Your FrontPage woop woop!"
+               alignment="CENTER">
+        </Label>
+    </bottom>
+
+    <stylesheets>
+        <URL value="@../../../style/FrontPageStyle.css" />
+    </stylesheets>
+
+</BorderPane>
