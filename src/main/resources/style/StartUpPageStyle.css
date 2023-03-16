@@ -1,33 +1,17 @@
 .label {
     -fx-text-fill: white;
     -fx-font-family: "Century Gothic";
-    -fx-font-size: 30.0;
+    -fx-font-size: 80.0;
     -fx-font-weight: bold;
 }
 
-#welcomeText {
-    -fx-background-color: #007FFF;
-    -fx-text-fill: white;
-    -fx-font-family: "Century Gothic";
-    -fx-font-size: 18.0;
-    -fx-font-weight: bold;
-}
-
-#welcomeText {
-    -fx-background-color: #0066CC;
-}
-
-#submitButton {
-    -fx-background-color: #2ecc71;
+/*
+TODO: Login buttons formatting is being overridden by the default one, fix it to something more aesthetic
+ */
+#loginButton {
+    -fx-pref-width: 100;
+    -fx-pref-height: 40;
+    -fx-background-color: #4CAF50; /* green */
     -fx-text-fill: white;
     -fx-font-size: 14px;
-    -fx-padding: 10px 20px;
-}
-
-#submitButton {
-    -fx-background-color: #27ae60;
-}
-
-#submitButton {
-    -fx-background-color: #219653;
 }

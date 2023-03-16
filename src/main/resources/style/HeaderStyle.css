@@ -1,12 +1,13 @@
 /* Header container */
 .header-container {
-    -fx-background-color: #333;
+    -fx-background-color: linear-gradient(to right, #21D0B2, #1DCDFE);
     -fx-alignment: center;
     -fx-padding: 10px;
+    -fx-width:100%;
 }
 
-/* Company name label */
-.company-name {
+/* EasyCoin label */
+.easycoin-label {
     -fx-text-fill: white;
     -fx-font-size: 24px;
     -fx-font-weight: bold;
@@ -34,14 +35,7 @@
 
 /* Header button hover */
 .header-button:hover {
-    -fx-background-color: white;
-    -fx-border-color: #333;
-    -fx-text-fill: #333;
+    -fx-background-color: #1DCDFE;
+    -fx-text-fill: white;
 }
 
-/* Header button pressed */
-.header-button:pressed {
-    -fx-background-color: #eee;
-    -fx-border-color: #333;
-    -fx-text-fill: #333;
-}

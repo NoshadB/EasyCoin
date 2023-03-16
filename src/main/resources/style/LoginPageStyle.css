@@ -1,0 +1,24 @@
+#submitButton {
+    -fx-background-color: #2ecc71;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+}
+
+.label {
+    -fx-text-fill: white;
+    -fx-font-size: 30px;
+    -fx-padding: 10px 20px;
+}
+
+/*
+TODO: Another css file hat just doesn't work?
+    On the login page, the field names below are stuck with the same formatting as the login button
+    It's not being overwritten, but it should be.
+    Instead it's following the styling of the .label. A solution may be to just give the label an id of its own.
+*/
+#usernameFormField, #passwordFormField{
+    -fx-text-fill: green;
+    -fx-font-size: 10px;
+    -fx-padding: 5px 5px;
+}

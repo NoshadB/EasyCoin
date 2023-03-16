@@ -1,43 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.Button?>
 <?import java.net.URL?>
+<?import javafx.scene.layout.BorderPane?>
 
 <!--
+TODO: File description -> What is it's purpose overall?
+
 This is the first scene shown on the application.
 It is the start-up page that welcomes the user to the program.
-
-Tasks to do...
-1. Properly comment code
 -->
 
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.easycoin.StartUpPageController"
-      style="-fx-background-color: #1B3145;">
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.easycoin.StartUpPageController"
+            style="-fx-background-color: #1B3145;">
 
-    <!-- <BorderPane>
-        <top>
-            <fx:include source="Header.fxml" />
-        </top>
-    </BorderPane>
+    <!-- TODO:Put this stylesheet in the borderpane header for easier formatting/reading, do to other files as well -->
+    <stylesheets> <URL value="@../../../style/StartUpPageStyle.css" /> </stylesheets>
 
-    -->
+    <center>
+        <VBox alignment="CENTER" spacing="20.0" >
 
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+            <!--
+            TODO: Put in style.css folder instead, because it doesn't work here
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+            </padding>
+            -->
 
-    <Label text="Welcome to EasyCoin!"
-           alignment="CENTER">
-    </Label>
+            <Label text="Welcome to EasyCoin!"
+               alignment="CENTER">
+            </Label>
 
-    <Label fx:id="loginButton"/>
-    <Button text="Log In" onAction="#onLoginButtonClick"/>
+            <Label fx:id="loginButton"/>
+            <Button text="Log In"
+                    onAction="#onLoginButtonClick">
+            </Button>
 
-    <stylesheets>
-        <URL value="@../../../style/StartUpPageStyle.css" />
-    </stylesheets>
-
-</VBox>
+        </VBox>
+    </center>
+    <bottom>
+        <!--
+        TODO: Consider adding a footer? may not be necessary but could give a cleaner look and is easy to do
+        -->
+    </bottom>
+</BorderPane>

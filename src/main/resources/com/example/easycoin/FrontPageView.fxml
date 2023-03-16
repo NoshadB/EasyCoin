@@ -5,28 +5,32 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
 
+<!--
+TODO: File description -> What is it's purpose overall?
+-->
 
 <BorderPane xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.example.easycoin.FrontPageController"
             style="-fx-background-color: #1B3145;">
-
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
-
+    <stylesheets> <URL value="@../../../style/FrontPageStyle.css" /> </stylesheets>
     <top>
         <fx:include source="Header.fxml"/>
     </top>
 
-    <bottom>
-        <Label text="Welcome to Your FrontPage woop woop!"
-               alignment="CENTER">
-        </Label>
-    </bottom>
-
-    <stylesheets>
-        <URL value="@../../../style/FrontPageStyle.css" />
-    </stylesheets>
-
+    <center>
+        <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity"
+              minHeight="-Infinity" minWidth="-Infinity" spacing="8.0">
+            <Label text="Welcome to your front page woop woop!"
+                   alignment="CENTER">
+            </Label>
+            <!--
+             TODO: Add blockchain or something nice
+             -->
+            <Label text="There should be a fitting design here but..."
+                   alignment="CENTER">
+            </Label>
+        </VBox>
+    </center>
 </BorderPane>

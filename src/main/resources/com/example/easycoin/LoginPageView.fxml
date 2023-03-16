@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -9,6 +8,10 @@
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.Button?>
 <?import java.net.URL?>
+
+<!--
+TODO: File description -> What is it's purpose overall?
+-->
 
 <GridPane fx:controller="com.example.easycoin.LoginPageController"
           xmlns:fx="http://javafx.com/fxml" alignment="center"
@@ -37,32 +40,19 @@
         </GridPane.margin>
     </Label>
 
-
-
-    <!-- Add Name Label -->
-    <Label text="Full Name : " GridPane.columnIndex="0"
+    <!-- Username Form Label -->
+    <Label fx:id= "usernameFormLabel" text="Username : " GridPane.columnIndex="0"
            GridPane.rowIndex="1" >
     </Label>
-    <!-- Add Name Text Field -->
-    <TextField fx:id="nameField" prefHeight="40"
+    <!-- Username Field -->
+    <TextField fx:id="usernameField" prefHeight="40"
                GridPane.columnIndex="1" GridPane.rowIndex="1"/>
 
-
-    <!-- Add Email Label -->
-    <Label text="Email ID : " GridPane.columnIndex="0"
-           GridPane.rowIndex="2" >
-    </Label>
-    <!-- Add Email Text Field -->
-    <TextField fx:id="emailField" prefHeight="40"
-               GridPane.columnIndex="1" GridPane.rowIndex="2"/>
-
-
-
-    <!-- Add Password Label -->
-    <Label text="Password : " GridPane.columnIndex="0"
+    <!--Password Form Label-->
+    <Label fx:id= "passwordFormLabel" text="Password : " GridPane.columnIndex="0"
            GridPane.rowIndex="3" >
     </Label>
-    <!-- Add Password Field -->
+    <!--Password Field -->
     <PasswordField fx:id="passwordField" prefHeight="40"
                    GridPane.columnIndex="1" GridPane.rowIndex="3"/>
 
@@ -80,6 +70,6 @@
     </Button>
 
     <stylesheets>
-        <URL value="@../../../style/StartUpPageStyle.css" />
+        <URL value="@../../../style/LoginPageStyle.css" />
     </stylesheets>
 </GridPane>
